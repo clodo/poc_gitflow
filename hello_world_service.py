@@ -11,7 +11,10 @@ def multiplication(num_a, num_b):
     return num_a * num_b
 
 def division(num_a, num_b):
-    return num_a / num_b
+    try:
+        return num_a / num_b
+    except ZeroDivisionError as e:
+        print('Division by 0 is not allowed')
 
 
 if __name__ == '__main__':
